@@ -1,11 +1,11 @@
---- Rosé Pine for bufferline
+--- Kareno for bufferline
 --- https://github.com/akinsho/bufferline.nvim
 ---
 --- @usage
---- local highlights = require("rose-pine.plugins.bufferline")
+--- local highlights = require("kareno.plugins.bufferline")
 --- require("bufferline").setup({ highlights = highlights })
 
-local p = require("sakura.palette")
+local p = require("kareno.palette")
 
 return {
 	-- fill = {

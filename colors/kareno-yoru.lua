@@ -1,0 +1,1 @@
+require("kareno").colorscheme("yami")

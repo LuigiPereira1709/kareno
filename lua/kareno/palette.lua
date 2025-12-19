@@ -1,4 +1,4 @@
-local options = require("sakura.config").options
+local options = require("kareno.config").options
 local variants = {
 	yoru = {
 		_nc = "#050505",
@@ -8,13 +8,13 @@ local variants = {
 		muted = "#555555",
 		subtle = "#808080",
 		text = "#dcdcdc",
-		love = "#f08fa5",
-		gold = "#d8b085",
-		rose = "#ffb3c3",
-		pine = "#8aa8a8",
-		foam = "#9ab8c2",
-		iris = "#c29abb",
-		leaf = "#95b595",
+		red = "#f08fa5",
+		yellow = "#d8b085",
+		pink = "#ffb3c3",
+		teal = "#8aa8a8",
+		blue = "#9ab8c2",
+		purple = "#c29abb",
+		green = "#95b595",
 		highlight_low = "#1a1a1a",
 		highlight_med = "#303030",
 		highlight_high = "#eb9fac",
@@ -28,13 +28,13 @@ local variants = {
 		muted = "#333333",
 		subtle = "#4f4f4f",
 		text = "#999999",
-		love = "#8a4b5d",
-		rose = "#a6858e",
-		iris = "#7d6678",
-		gold = "#8f806d",
-		pine = "#586e6e",
-		foam = "#637680",
-		leaf = "#697869",
+		red = "#8a4b5d",
+		pink = "#a6858e",
+		purple = "#7d6678",
+		yellow = "#8f806d",
+		teal = "#586e6e",
+		blue = "#637680",
+		green = "#697869",
 		highlight_low = "#0d0d0d",
 		highlight_med = "#1a1a1a",
 		highlight_high = "#261518",
@@ -55,4 +55,4 @@ if variants[options.variant] ~= nil then
 	return variants[options.variant]
 end
 
-return variants[options.dark_variant or "main"]
+return variants[options.dark_variant or "yoru"]

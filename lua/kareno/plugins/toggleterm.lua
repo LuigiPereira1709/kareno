@@ -1,8 +1,8 @@
---- Rosé Pine for toggleterm
+--- Kareno for toggleterm
 --- https://github.com/akinsho/toggleterm.nvim
 ---
 --- @usage
---- local highlights = require("rose-pine.plugins.toggleterm")
+--- local highlights = require("kareno.plugins.toggleterm")
 --- require("toggleterm").setup({ highlights = highlights })
 
 return {

@@ -1,19 +1,19 @@
----@alias Variant "main" | "dark"
----@alias Palette { base: string, surface: string, overlay: string, muted: string, subtle: string, text: string, love: string, gold: string, rose: string, pine: string, foam: string, iris: string }
----@alias PaletteColor "base" | "surface" | "overlay" | "muted" | "subtle" | "text" | "love" | "gold" | "rose" | "pine" | "foam" | "iris" | "highlight_low" | "highlight_med" | "highlight_high"
+---@alias Variant "yoru" | "yami"
+---@alias Palette { base: string, surface: string, overlay: string, muted: string, subtle: string, text: string, red: string, yellow: string, pink: string, teal: string, blue: string, purple: string }
+---@alias PaletteColor "base" | "surface" | "overlay" | "muted" | "subtle" | "text" | "red" | "yellow" | "pink" | "teal" | "blue" | "purple" | "highlight_low" | "highlight_med" | "highlight_high"
 ---@alias Highlight { link: string, inherit: boolean } | { fg: string, bg: string, sp: string, bold: boolean, italic: boolean, undercurl: boolean, underline: boolean, underdouble: boolean, underdotted: boolean, underdashed: boolean, strikethrough: boolean, inherit: boolean }
 
 local config = {}
 
 ---@class Options
 config.options = {
-	---Set the desired variant: "main" (sakura)
+	---Set the desired variant: "yoru" (kareno)
 	---@type Variant
-	variant = "main",
+	variant = "yoru",
 
-	---Set the desired dark variant 
+	---Set the desired dark variant
 	---@type Variant
-	dark_variant = "main",
+	dark_variant = "yoru",
 
 	---Differentiate between active and inactive windows and panels.
 	dim_inactive_windows = false,
@@ -40,35 +40,35 @@ config.options = {
 	---@type table<string, string | PaletteColor>
 	groups = {
 		border = "muted",
-		link = "iris",
+		link = "purple",
 		panel = "surface",
 
-		error = "love",
-		hint = "iris",
-		info = "foam",
-		ok = "leaf",
-		warn = "gold",
-		note = "pine",
-		todo = "rose",
+		error = "red",
+		hint = "purple",
+		info = "blue",
+		ok = "green",
+		warn = "yellow",
+		note = "teal",
+		todo = "pink",
 
-		git_add = "foam",
-		git_change = "rose",
-		git_delete = "love",
-		git_dirty = "rose",
+		git_add = "blue",
+		git_change = "pink",
+		git_delete = "red",
+		git_dirty = "pink",
 		git_ignore = "muted",
-		git_merge = "iris",
-		git_rename = "pine",
-		git_stage = "iris",
-		git_text = "rose",
+		git_merge = "purple",
+		git_rename = "teal",
+		git_stage = "purple",
+		git_text = "pink",
 		git_untracked = "subtle",
 
 		---@type string | PaletteColor
-		h1 = "iris",
-		h2 = "foam",
-		h3 = "rose",
-		h4 = "gold",
-		h5 = "pine",
-		h6 = "leaf",
+		h1 = "purple",
+		h2 = "blue",
+		h3 = "pink",
+		h4 = "yellow",
+		h5 = "teal",
+		h6 = "green",
 	},
 
 	---@type table<string, Highlight>

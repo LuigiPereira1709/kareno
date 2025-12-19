@@ -1,10 +1,10 @@
---- Rosé Pine for markid
+--- Kareno for markid
 --- https://github.com/David-Kunz/markid
 ---
 --- @usage
---- local highlights = require("rose-pine.plugins.markid")
+--- local highlights = require("kareno.plugins.markid")
 --- require("nvim-treesitter.configs").setup({ markid = { enable = true, colors = highlights } })
 
-local p = require("sakura.palette")
+local p = require("kareno.palette")
 
-return { p.foam, p.rose, p.iris }
+return { p.blue, p.pink, p.purple }
