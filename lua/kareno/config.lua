@@ -1,4 +1,4 @@
----@alias Variant "yoru" | "yami"
+---@alias Variant "hiru" | "yoru"
 ---@alias Palette { base: string, surface: string, overlay: string, muted: string, subtle: string, text: string, red: string, yellow: string, pink: string, teal: string, blue: string, purple: string }
 ---@alias PaletteColor "base" | "surface" | "overlay" | "muted" | "subtle" | "text" | "red" | "yellow" | "pink" | "teal" | "blue" | "purple" | "highlight_low" | "highlight_med" | "highlight_high"
 ---@alias Highlight { link: string, inherit: boolean } | { fg: string, bg: string, sp: string, bold: boolean, italic: boolean, undercurl: boolean, underline: boolean, underdouble: boolean, underdotted: boolean, underdashed: boolean, strikethrough: boolean, inherit: boolean }
@@ -7,13 +7,13 @@ local config = {}
 
 ---@class Options
 config.options = {
-	---Set the desired variant: "yoru" (kareno)
+	---Set the desired variant: "hiru" (kareno)
 	---@type Variant
-	variant = "yoru",
+	variant = "hiru",
 
 	---Set the desired dark variant
 	---@type Variant
-	dark_variant = "yoru",
+	dark_variant = "hiru",
 
 	---Differentiate between active and inactive windows and panels.
 	dim_inactive_windows = false,

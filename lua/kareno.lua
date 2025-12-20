@@ -1231,7 +1231,7 @@ function M.colorscheme(variant)
 	end
 	vim.g.colors_name = "kareno"
 
-	if variant == "yoru" or variant == "yami" then
+	if variant == "hiru" or variant == "yoru" then
 		vim.o.background = "dark"
 	end
 

@@ -1,6 +1,6 @@
 local options = require("kareno.config").options
 local variants = {
-	yoru = {
+	hiru = {
 		_nc = "#050505",
 		base = "#050505",
 		surface = "#121212",
@@ -20,7 +20,7 @@ local variants = {
 		highlight_high = "#eb9fac",
 		none = "NONE",
 	},
-	yami = {
+	yoru = {
 		_nc = "#000000",
 		base = "#000000",
 		surface = "#0a0a0a",
@@ -55,4 +55,4 @@ if variants[options.variant] ~= nil then
 	return variants[options.variant]
 end
 
-return variants[options.dark_variant or "yoru"]
+return variants[options.dark_variant or "hiru"]
